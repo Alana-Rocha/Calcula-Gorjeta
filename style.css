@@ -1,0 +1,83 @@
+:root {
+    --primary-color  : #BC8F8F;
+    --secondary-color: #392243;
+    --tertiary-color : #F4A460;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size       : 17px;
+    font-family     : 'Roboto Mono', monospace;
+}
+
+#container {
+    height       : 525px;
+    width        : 380px;
+    margin       : 100px auto;
+    background   : #F4A460;
+    box-shadow   : 5px 5px 5px var(--secondary-color);
+    border-radius: 15px;
+    border       : 1px solid;
+ 
+}
+
+input{
+   font-family: 'Press Start 2P', cursive ;
+}
+
+
+
+.title {
+    background            : var(--secondary-color);
+    color                 : var(--primary-color);
+    padding               : 20px;
+    text-transform        : uppercase;
+    font-size             : 18px;
+    border-top-left-radius: 0px 5px;
+    border-top-left-radius: 0px 5px;
+    text-align            : center;
+}
+
+.tipsForm {
+   padding-left : 20px;
+   padding-right: 20px;
+}
+
+.formInput {
+    background-color: antiquewhite;
+    width           : 40px;
+    padding         : 5px 5px 5px 5px;
+}
+
+.formInput:focus {
+ border : 3px solid var(--secondary-color);
+ outline: none;
+}
+
+.formSelect {
+    background-color: antiquewhite;
+    width           : 180px;
+    padding         : 5px;
+    font-size       : 13px;
+    font-family     : 'Press Start 2P', cursive;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight   : bold;
+    display       : block;
+    margin        : 35px auto;
+    background    : var(--secondary-color);
+    border-radius : 5px;
+    width         : 200px;
+    height        : 50px;
+    font-size     : 16px;
+    color         : white;
+}
+
+#totalTip {
+    font-size : 20px;
+    margin-top: 5px;
+    text-align: center;
+
+}
