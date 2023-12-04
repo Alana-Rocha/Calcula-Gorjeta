@@ -1,21 +1,23 @@
 :root {
-  --primary-color: #bc8f8f;
-  --secondary-color: #392243;
-  --tertiary-color: #f4a460;
+  --primary-color: #e3ffff;
+  --secondary-color: #97dcff;
+  --tertiary-color: #545d8d;
 }
 
 body {
-  background-color: var(--primary-color);
+  margin: 0px;
+  background-color: var(--secondary-color);
   font-size: 17px;
   font-family: "Roboto Mono", monospace;
 }
 
 #container {
-  height: 525px;
-  width: 380px;
+  margin: 100px;
+  height: 500px;
+  width: 420px;
   margin: 100px auto;
-  background: #f4a460;
-  box-shadow: 5px 5px 5px var(--secondary-color);
+  background: var(--primary-color);
+  box-shadow: 5px 5px 5px var(--tertiary-color);
   border-radius: 15px;
   border: 1px solid;
 }
@@ -25,13 +27,10 @@ input {
 }
 
 .title {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   color: var(--primary-color);
-  padding: 20px;
   text-transform: uppercase;
   font-size: 18px;
-  border-top-left-radius: 0px 5px;
-  border-top-left-radius: 0px 5px;
   text-align: center;
 }
 
@@ -41,7 +40,7 @@ input {
 }
 
 .formInput {
-  background-color: antiquewhite;
+  background-color: var(--primary-color);
   width: 40px;
   padding: 5px 5px 5px 5px;
 }
@@ -52,7 +51,7 @@ input {
 }
 
 .formSelect {
-  background-color: antiquewhite;
+  background-color: var(--primary-color);
   width: 180px;
   padding: 5px;
   font-size: 13px;
@@ -64,7 +63,7 @@ input {
   font-weight: bold;
   display: block;
   margin: 35px auto;
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   border-radius: 5px;
   width: 200px;
   height: 50px;
