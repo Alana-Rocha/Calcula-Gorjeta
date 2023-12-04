@@ -13,7 +13,7 @@ body {
 
 #container {
   margin: 100px auto;
-  height: 500px;
+  height: 560px;
   width: 420px;
   background: var(--primary-color);
   box-shadow: 5px 5px 5px var(--tertiary-color);
