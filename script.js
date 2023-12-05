@@ -9,16 +9,24 @@ function calculateTip(event) {
     return;
   }
 
-  if (numbOfPeople == " " || numbOfPeople <= 1) {
-    numbOfPeople = 1;
-    document.getElementById("each").style.display = "none";
-  }
-  document.getElementById("each").style.display = "block";
+  const eachPersonDisplay = numbOfPeople <= 1 ? "none" : "block";
+  toggleElementDisplay("each", eachPersonDisplay);
 
-  let total = (bill * serviceQual) / numbOfPeople;
-  total = parseFloat(total.toFixed(2));
-  document.getElementById("tip").innerHTML = total;
-  document.getElementById("totalTip").style.display = "block";
+  const totalTip = (bill * serviceQual) / numbOfPeople;
+  displayResult("tip", totalTip.toFixed(2));
+  toggleElementDisplay("totalTip", "block");
+}
+
+function getInputValue(elementId) {
+  return document.getElementById(elementId).value.trim();
+}
+
+function displayResult(elementId, value) {
+  document.getElementById(elementId).innerHTML = value;
+}
+
+function toggleElementDisplay(elementId, displayValue) {
+  document.getElementById(elementId).style.display = displayValue;
 }
 
 document.getElementById("totalTip").style.display = "none";
