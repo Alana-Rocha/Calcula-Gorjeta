@@ -1,4 +1,4 @@
-# calculadora-de-gorjeta
- Calculadora de gorjetas utilizando JavaScript.
+# Calculadora de Gorjeta
+ Calculadora de gorjeta utilizando JavaScript.
  
 
